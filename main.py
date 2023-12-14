@@ -49,7 +49,7 @@ if uploaded_file is not None:
             # Interpréter les résultats
             confidence = predictions[0][0] * 100  # En pourcentage
             if predictions[0][0] < 0.5:
-                result = f"Pas de cancer à {confidence:.1f}%."
+                result = f"Pas de cancer à  {confidence:.1f}%."
             else:
                 result = f"Présence de cancer {confidence:.1f}%."
             
